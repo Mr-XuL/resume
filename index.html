@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="demo.css">
+    <script src="//at.alicdn.com/t/font_1650908_nzw5lb4pht.js"></script>
+    <link rel="stylesheet" href="loading.css">
+    <style type="text/css">
+        .icon {
+            width: 1em;
+            height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }
+
+        .site-welcome {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #888;
+            z-index: 1;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .site-welcome.active {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+<div id="siteWelcome" class="site-welcome active">
+    <div class="loading"></div>
+</div>
+<div id="topNavBar" class="topNavBar ">
+    <div class="topNavBar-inner clearfix">
+        <a href="#" class="logo" alt="logo" style="float:left;">
+            <span id="rs" class="rs  ">RS</span><span class="card">card</span>
+        </a>
+        <nav class="menu" style="float:right;">
+            <ul class="clearfix">
+                <li>
+                    <a href="#siteAbout">关于</a>
+                </li>
+                <li>
+                    <a href="#siteSkills">技能</a>
+                </li>
+                <li>
+                    <a href="#siteWorks">作品</a>
+                    <ul class="submenu">
+                        <li>作品1</li>
+                        <li>作品2</li>
+                        <li>作品3</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">博客</a>
+                    <ul class="submenu">
+                        <li>博客1</li>
+                        <li>博客2</li>
+                        <li>博客3</li>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">日历</a>
+                </li>
+                <li>
+                    <a href="#">联系方式</a>
+                </li>
+                <li>
+                    <a href="#">其他</a>
+                </li>
+            </ul>
+
+        </nav>
+
+    </div>
+</div>
+<div class="banner" style="background-image:url('./img/wallhaven-47d2mo.jpg')">
+    <div class="mask"></div>
+</div>
+<main>
+    <div class="userCard" id="siteAbout">
+        <div class="pictureAndText clearfix">
+            <div class="picture">
+                <img src="./img/wallhaven-k9ey86.jpg" width="299" height="347" alt="头像">
+            </div>
+
+            <!--  右边文字  -->
+            <div class="text">
+
+                <span class="welcome">Hello
+                <span class="triangle"></span>
+                </span>
+                <h1>許佳希</h1>
+                <p>前端开发工程师</p>
+                <hr>
+
+                <dl>
+                    <dt>年龄</dt>
+                    <dd>20</dd>
+                    <dt>所在城市</dt>
+                    <dd>惠州</dd>
+                    <dt>邮箱</dt>
+                    <dd>x15019812031@163.com</dd>
+                    <dt>手机</dt>
+                    <dd>15019812031</dd>
+                </dl>
+            </div>
+
+        </div>
+        <footer class="media">
+            <a href="#">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-weixin"></use>
+                </svg>
+            </a>
+            <a href="#">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-QQ"></use>
+                </svg>
+            </a>
+
+            <a href="#">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-github"></use>
+                </svg>
+            </a>
+            <a href="#">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-tuitetwitter44"></use>
+                </svg>
+            </a>
+            <a href="#">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-weibo"></use>
+                </svg>
+            </a>
+
+        </footer>
+
+    </div>
+    <p id="downloaResume-Wrapper">
+        <a class="downloadResume" href="./resume.pdf" target="_blank" download> 下载PDF简历</a>
+    </p>
+    <p class="selfIintroduction">
+        我是一个能承受日益严格的竞争压力，并能在成功和失败中完善自己，崇尚团队合作的人
+    </p>
+</main>
+
+<section class="skills" id="siteSkills">
+    <h2>技能</h2>
+    <ol class="clearfix">
+        <li>
+            <h3>
+                HTML &amp; CSS3
+            </h3>
+            <div class="progressBar">
+                <div class="progress" style="width:20%"></div>
+            </div>
+        </li>
+
+        <li>
+            <h3>JQuery
+            </h3>
+            <div class="progressBar">
+                <div class="progress" style="width:40%"></div>
+            </div>
+        </li>
+        <li>
+            <h3>
+                vue.js
+            </h3>
+            <div class="progressBar">
+                <div class="progress" style="width:60%"></div>
+            </div>
+        </li>
+        <li>
+            <h3>
+                React.js
+            </h3>
+            <div class="progressBar">
+                <div class="progress" style="width:80%"></div>
+            </div>
+        </li>
+        <li>
+            <h3>
+                Node.js
+            </h3>
+            <div class="progressBar">
+                <div class="progress" style="width:100%"></div>
+            </div>
+        </li>
+        <li>
+            <h3>
+                JavaScript
+            </h3>
+            <div class="progressBar">
+                <div class="progress"></div>
+            </div>
+        </li>
+        <li>
+            <h3>
+                JavaScript
+            </h3>
+            <div class="progressBar">
+                <div class="progress"></div>
+            </div>
+        </li>
+        <li>
+            <h3>
+                JavaScript
+            </h3>
+            <div class="progressBar">
+                <div class="progress"></div>
+            </div>
+        </li>
+    </ol>
+</section>
+
+<section class="portfolio" id="siteWorks">
+    <h2>作品集</h2>
+    <nav>
+        <ol class="clearfix">
+            <li id="portfolioAll">所有</li>
+            <li id="portfolioFramework">框架</li>
+            <li id="portfolioVallina">原生JS &amp; CSS</li>
+        </ol>
+
+        <div class="bar state-1" id="portfolioBar">
+            <div class="bar-inner"></div>
+        </div>
+    </nav>
+
+    <script>
+        portfolioAll.onclick = function () {
+            portfolioBar.className = 'bar state-1'
+        }
+        portfolioFramework.onclick = function () {
+            portfolioBar.className = 'bar state-2'
+        }
+        portfolioVallina.onclick = function () {
+            portfolioBar.className = 'bar state-3'
+        }
+
+    </script>
+    <div class="works" style="height:602px">
+        <div class="big" style="top:0px ;left:0;">
+            <img src="../resume/img/1.jpg" alt="作品1" style="width: 620px; height:602px">
+        </div>
+        <div class="small" style="top:0px ;left:637px;">
+            <img src="../resume/img/2.jpg" alt="作品2" style="width:293px;height:290px">
+        </div>
+        <div class="small" style="top:312px ;left:637px;">
+            <img src="../resume/img/2.jpg" alt="作品3" style="width:293px;height:290px">
+        </div>
+    </div>
+
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tweenjs/1.0.2/tweenjs.min.js"></script>
+
+<script>
+    setTimeout(function () {
+        siteWelcome.classList.remove('active')
+    }, 1000)
+
+    window.onscroll = function (x) {
+        if (window.scrollY > 0) {
+            topNavBar.classList.add('sticky')
+        } else {
+            topNavBar.classList.remove('sticky')
+        }
+    }
+    let liTags = document.querySelectorAll("nav.menu > ul >li ")
+
+    for (let i = 0; i < liTags.length; i++) {
+        liTags[i].onmouseenter = function (x) {
+            x.currentTarget.classList.add('active')
+        }
+        liTags[i].onmouseleave = function (x) {
+            x.currentTarget.classList.remove('active')
+        }
+    }
+
+    let aTags = document.querySelectorAll('nav.menu>ul > li > a')
+
+
+
+    var tween = new TWEEN.Tween();
+    function animate(time) {
+        requestAnimationFrame(animate);
+
+        TWEEN.update(time);
+
+    }
+    requestAnimationFrame(animate);
+
+
+    for (let i = 0; i < aTags.length; i++) {
+        aTags[i].onclick = function (x) {
+             x.preventDefault() // preventDefault  阻止默认行为
+             let a = x.currentTarget
+             let  href = a.getAttribute('href') // a.href 是带http协议的，a.getAttribute('href') 是用户写什么就是什么，不做任何处理
+             let element = document.querySelector(href )
+             let top = element.offsetTop
+
+            //let top = document.querySelector(x.currentTarget.getAttribute('href')).offsetTop
+
+            let currentTop = window.scrollY
+            let targetTop = top - 80
+            var coords =   { y : currentTop};
+            var tween = new TWEE.Tween(coords)
+                .to({ y : targetTop}, 1000)
+                .easing(TWEE.Easing.Quadratic.InOut)
+                .onUpdate(function () {
+                  window.scrollTo(0,coords.y)
+                })
+                .start();
+
+        }
+        console.log(TWEEN);
+    }
+</script>
+
+
+</body>
+
+</html>
+
+
+<!--
+ <ul>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">SKILLS</a></li>
+            <li><a href="#">EXPERIENCE</a></li>
+            <li><a href="#">PRICING</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">CALENDAR</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">OTHER</a></li>
+            <li><a href="#">ALL DEMOS</a></li>
+        </ul>
+
+
+-->

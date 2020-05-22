@@ -1,0 +1,191 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+body{
+    background: #444444;
+}
+/* 第一遍
+#yinyang {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom,#ffffff 0%,#ffffff 50%, #000000 51%,#000000 100%);
+    position:relative;
+    margin:100px auto;
+}
+#yinyang > .one{
+    width: 100px;
+    height: 100px;
+    border-radius:50%;
+    position: absolute;
+    background: #000;
+    top: 60px;
+    left: 0px;
+ }
+
+#yinyang .one .one1{
+    width: 20px;
+    height:20px;
+    border-radius:50%;
+    background: #fff;
+    position:absolute;
+    margin:32px;
+ }
+
+#yinyang > .two{
+  width:100px;
+    height:100px;
+    border-radius: 50%;
+    background: #fff;
+    position:absolute;
+    top:50px;
+    right:0px;
+}
+#yinyang >.two >.two2{
+
+    width: 20px;
+    height:20px;
+    border-radius:50%;
+    background: #000;
+    position:absolute; 
+    top:40px;
+    right:45px;
+}*/
+
+/* 第二遍
+#yinyang{
+
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 50%,rgba(10,14,10,1) 51%,rgba(10,8,9,1) 100%);
+    position:relative;
+    margin:200px auto;
+}
+
+#yinyang .one{
+    width:250px;
+    height:250px;
+    border-radius: 50%;
+    position:absolute;
+    background: #000;
+    margin: 130px;
+    top:120px;
+}
+
+#yinyang .one .one1{
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    position:absolute;
+    background: #ffffff;
+    margin:75px;
+}
+
+#yinyang .two{
+    width:250px;
+    height:250px;
+    border-radius: 50%;
+    position:absolute;
+    background: #ffffff;
+    margin: 130px;
+    bottom:120px;
+}
+#yinyang .two .two2{
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    position:absolute;
+    background: #000;
+    margin:75px;
+}
+ */
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+.yinyang{
+    width: 500px;
+    height:500px;
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 50%,rgba(10,14,10,1) 51%,rgba(10,8,9,1) 100%);
+    position:relative;
+    border:1px red solid;
+    border-radius:50%;
+    margin:100px auto;
+    animation-duration: 1s;/*设置动画播放一遍完成的时间*/
+    animation-name:spin;/*设置执行name属性为 spin的函数*/
+     animation-iteration-count: infinite;/*设置动画重复播放的次数*/
+    animation-timing-function: linear;/*设置动画播放属性为线性播放*/
+
+}
+
+
+.yinyang::before{
+    content:'';
+    width: 40px;
+    height: 40px;
+    border: 105px black solid;
+    border-radius:50%;
+    position:absolute;
+    background: #fff;
+    right: 130px;
+
+}
+
+.yinyang::after{
+    content:'';
+    width: 40px;
+    height: 40px;
+    border: 105px white solid;
+    border-radius:50%;
+    position:absolute;
+    background: #000;
+    left:120px;
+    bottom:0px;
+
+}
+
+/*
+.yinyang{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 50%,rgba(10,14,10,1) 51%,rgba(10,8,9,1) 100%);
+    position:relative;
+    margin:200px auto;
+    animation-duration: 1s;/*设置动画播放完一边的速度
+    animation-name: spin ;
+     animation-iteration-count: infinite;!*无限次*!
+     animation-timing-function: linear;!*设置动画播放*!
+}
+
+.yinyang::before{
+    content:'';
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    position:absolute;
+    background: white;
+    margin: 130px;
+    top:120px;
+    border:105px solid #000;
+}
+
+
+.yinyang::after{
+    content:'';
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    position:absolute;
+    background: black;
+    right: 130px;
+    border:105px solid white;
+} */
+
+
